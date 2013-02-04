@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Miracast</string>
+    <string name="menu_settings">Settings</string>
+    <string name="wifi_display_settings_title">Miracast Settings</string>
+    <string name="progress_scanning">scanning</string>
+    <string name="wifi_display_search_for_devices">Search for displays</string>
+    <string name="wifi_display_searching_for_devices">Searching\u2026</string>
+    <string name="wifi_display_paired_devices">Paired displays</string>
+    <string name="wifi_display_options_name">Name</string>
+    <string name="wifi_display_options_title">Wireless display options</string>
+    <string name="wifi_display_options_done">Done</string>
+    <string name="wifi_display_options_forget">Forget</string>
+    <string name="wifi_display_status_connected">Connected</string>
+    <string name="wifi_display_status_connecting">Connecting</string>
+    <string name="wifi_display_status_available">Available</string>
+    <string name="wifi_display_details">Display settings</string>
+    <string name="wifi_display_no_devices_found">No nearby wireless displays were found.</string>
+    <string name="wifi_display_available_devices">Available devices</string>
+    <string name="wifi_display_settings_empty_list_wifi_display_off">To see devices, turn wireless display on.</string>
+    <string name="wifi_display_settings_empty_list_wifi_display_disabled">Wireless display is disabled because Wi-Fi is off.</string>
+    <string name="help_label">Help</string>
+    <string name="lock_settings_picker_title">Choose screen lock</string>
+    <string name="options_menu_settings">options</string>
+    <string name="wifi_display_disconnect_title">Disconnect?</string>
+    <string name="wifi_display_disconnect_text">This will end your connection with:%1$s</string>
+    <string name="wifi_display_connection_erro_title">Connection Error!</string>
+    <string name="wifi_display_connection_erro_text">No Permission CONFIGURE_WIFI_DISPLAY. Error connection:%1$s</string>
+
+</resources>
