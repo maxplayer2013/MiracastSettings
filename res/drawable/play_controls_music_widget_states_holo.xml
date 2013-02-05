@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/controls_widget_pressed_holo" android:state_pressed="true"/>
+    <item android:drawable="@drawable/controls_widget_focused_holo" android:state_focused="true" android:state_window_focused="true"/>
+
+</selector>

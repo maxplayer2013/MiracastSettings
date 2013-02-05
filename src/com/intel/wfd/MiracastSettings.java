@@ -39,6 +39,7 @@ import com.intel.mockup.IWifiDisplayStatusProxy;
 import com.intel.mockup.ProxyFactory;
 import com.intel.ui.ProgressCategory;
 import com.intel.wfd.R;
+import com.intel.wfd.widget.MiracastSettingsWidgetProvider;
 
 public class MiracastSettings extends PreferenceActivity {
 
@@ -62,6 +63,8 @@ public class MiracastSettings extends PreferenceActivity {
     private TextView mEmptyView;
 
     private Context mContext;
+    
+    private MiracastSettingsWidgetProvider mMiracastSettingsWidgetProvider = MiracastSettingsWidgetProvider.getInstance();
 
     public MiracastSettings() {
     }
@@ -189,8 +192,11 @@ public class MiracastSettings extends PreferenceActivity {
                 IWifiDisplayStatusProxy status = ProxyFactory.newStatusProxyInstance(statusObj);
 
                 mMyWifiDisplayStatus = status;
+                mMiracastSettingsWidgetProvider.mMyWifiDisplayStatus = status;
+                mMiracastSettingsWidgetProvider.notifyChange(mContext);
 
                 applyState();
+                
             }
         }
     };

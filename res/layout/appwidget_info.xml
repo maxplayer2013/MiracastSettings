@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top"
+    android:background="@drawable/widget_panel_background_new"
+    android:baselineAligned="false"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_gravity="top"
+        android:baselineAligned="false"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/albumartframe"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/albumart"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:src="@drawable/ic_launcher"
+                android:scaleType="centerInside" />
+
+            <FrameLayout
+                android:id="@+id/progress"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:focusable="true"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip" >
+
+            <ImageButton
+                android:id="@+id/ratings_off"
+		        android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:focusable="true"
+                android:padding="8.0dip"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:focusable="false" />
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:background="@drawable/play_controls_music_widget_states_holo"
+                android:focusable="true"
+                android:padding="8.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_play_normal_jb_dark" />
+
+            <ImageButton
+                android:id="@+id/pause"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:background="@drawable/play_controls_music_widget_states_holo"
+                android:focusable="true"
+                android:padding="8.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_pause_normal_jb_dark"
+                android:visibility="gone" />
+
+
+            <FrameLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:focusable="false" />
+
+            <ImageButton
+                android:id="@+id/stop"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:background="@drawable/play_controls_music_widget_states_holo"
+                android:focusable="true"
+                android:padding="8.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_stop_normal_jb_dark" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/appwidget_separator" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1.0"
+        android:focusable="true"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="1.0dip" >
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="@string/wifi_display_settings_title"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/appwidget_text_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:singleLine="true"
+            android:text="@string/appwidget_text_separator"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/appwidget_text_secondary"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/appwidget_text_secondary" />
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/appwidget_text_primary"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

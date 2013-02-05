@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/appwidget_info"
+    android:minHeight="@dimen/widget_np_small_min_height"
+    android:minWidth="@dimen/widget_np_small_min_width"
+    android:previewImage="@drawable/widget_preview_miracast"
+    android:updatePeriodMillis="0" />

@@ -28,4 +28,7 @@
     <string name="wifi_display_connection_erro_title">Connection Error!</string>
     <string name="wifi_display_connection_erro_text">No Permission CONFIGURE_WIFI_DISPLAY. Error connection:%1$s</string>
 
+    <!-- App widget -->
+    <string name="appwidget_text_separator">-</string>
+    
 </resources>
